@@ -1,0 +1,21 @@
+#hugo-jumbotron {
+    /*width: 100%;
+    max-height: 600px;
+    min-height: 600px*/
+}
+
+.container-progress-bar {
+    padding-top: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.progress-bar-warning {
+    background-color: #e1701f;
+}
+
+.hugo-jumbotron-loading {
+    color: #ccc;
+    background-color: #080808;
+
+}

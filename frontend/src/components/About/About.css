@@ -1,0 +1,17 @@
+.hugo-about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.hugo-about-text {
+    margin-left: 50px;
+}
+
+.hugo-about-text > p {
+    margin-top: 45px;
+    font-size: 1.5em;
+}
+
+.about-image-placeholder {
+    padding-top: 150px;
+}

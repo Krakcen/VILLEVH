@@ -16,9 +16,8 @@ const services = require('./services');
 const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
-console.log("THIS ONE");
-
 const app = express(feathers());
+
 
 // Load app configuration
 app.configure(configuration());
@@ -28,9 +27,10 @@ app.use(helmet());
 app.use(compress());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(favicon(path.join(app.get('public'), 'favicon.ico')));
+app.use(favicon(path.join(app.get('public'), 'build/favicon.png')));
+
 // Host the public folder
-app.use('/', express.static(app.get('public')));
+app.use('/', express.static('public/build'));
 
 // Set up Plugins and providers
 app.configure(express.rest());

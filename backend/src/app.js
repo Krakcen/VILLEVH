@@ -27,6 +27,8 @@ app.use(helmet());
 app.use(compress());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+
 app.use(favicon(path.join(app.get('public'), 'build/favicon.png')));
 
 // Host the public folder
